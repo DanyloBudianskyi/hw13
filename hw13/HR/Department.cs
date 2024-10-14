@@ -8,10 +8,10 @@
         public int LocationId { get; set; }       // Идентификатор локации, где расположен отдел
         public override string ToString()
         {
-            return $"Department id: {DepartmentId}," +
-                $"Department name: {DepartmentName}," +
-                $"Manager id: {ManagerId}" +
-                $"Location id: {LocationId}";
+            return $"Department id: {DepartmentId}\n" +
+                $"Department name: {DepartmentName}\n" +
+                $"Manager id: {ManagerId}\n" +
+                $"Location id: {LocationId}\n";
         }
     }
 }

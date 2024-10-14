@@ -592,10 +592,10 @@ namespace collection_practice.DbContext
                 FirstName = "John",
                 LastName = "Doe",
                 Email = "john.doe@example.com",
-                PhoneNumber = "555-123-4567",
+                PhoneNumber = "123.123-4567",
                 HireDate = new DateTime(2020, 1, 15),
                 JobId = job[0].JobId,
-                Salary = 65000,
+                Salary = 65500,
                 CommissionPct = 0.1m,
                 ManagerId = 0,
                 DepartmentId = department[0].DepartmentId
@@ -608,10 +608,10 @@ namespace collection_practice.DbContext
                 FirstName = "Jane",
                 LastName = "Smith",
                 Email = "jane.smith@example.com",
-                PhoneNumber = "555-234-5678",
+                PhoneNumber = "321-234.5678",
                 HireDate = new DateTime(2019, 5, 20),
                 JobId = job[1].JobId,
-                Salary = 55000,
+                Salary = 55500,
                 CommissionPct = 0.08m,
                 ManagerId = 1, // Указываем ID менеджера (employee1)
                 DepartmentId = department[1].DepartmentId
@@ -624,12 +624,12 @@ namespace collection_practice.DbContext
                 FirstName = "Michael",
                 LastName = "Johnson",
                 Email = "michael.johnson@example.com",
-                PhoneNumber = "555-345-6789",
+                PhoneNumber = "546-345-6789",
                 HireDate = new DateTime(2021, 3, 10),
                 JobId = job[2].JobId,
-                Salary = 60000,
+                Salary = 60500,
                 CommissionPct = 0.09m,
-                ManagerId = 0,
+                ManagerId = 1,
                 DepartmentId = department[2].DepartmentId
             };
             employees.Add(employee3);
@@ -640,7 +640,7 @@ namespace collection_practice.DbContext
                 FirstName = "Emily",
                 LastName = "Wilson",
                 Email = "emily.wilson@example.com",
-                PhoneNumber = "555-456-7890",
+                PhoneNumber = "867-456-7890",
                 HireDate = new DateTime(2018, 7, 5),
                 JobId = job[3].JobId,
                 Salary = 75000,
@@ -656,12 +656,12 @@ namespace collection_practice.DbContext
                 FirstName = "David",
                 LastName = "Brown",
                 Email = "david.brown@example.com",
-                PhoneNumber = "555-567-8901",
+                PhoneNumber = "234.567-8901",
                 HireDate = new DateTime(2019, 10, 3),
                 JobId = job[4].JobId,
-                Salary = 60000,
+                Salary = 60500,
                 CommissionPct = 0.1m,
-                ManagerId = 2, // Указываем ID менеджера (employee2)
+                ManagerId = 1, // Указываем ID менеджера (employee2)
                 DepartmentId = department[4].DepartmentId
             };
             employees.Add(employee5);
@@ -672,12 +672,12 @@ namespace collection_practice.DbContext
                 FirstName = "Sarah",
                 LastName = "Davis",
                 Email = "sarah.davis@example.com",
-                PhoneNumber = "555-678-9012",
+                PhoneNumber = "756-678-9012",
                 HireDate = new DateTime(2020, 2, 20),
                 JobId = job[5].JobId,
                 Salary = 50000,
                 CommissionPct = 0.07m,
-                ManagerId = 3, // Указываем ID менеджера (employee3)
+                ManagerId = 1, // Указываем ID менеджера (employee3)
                 DepartmentId = department[5].DepartmentId
             };
             employees.Add(employee6);
@@ -688,12 +688,12 @@ namespace collection_practice.DbContext
                 FirstName = "James",
                 LastName = "Clark",
                 Email = "james.clark@example.com",
-                PhoneNumber = "555-789-0123",
+                PhoneNumber = "534-789-0123",
                 HireDate = new DateTime(2021, 8, 10),
                 JobId = job[6].JobId,
-                Salary = 45000,
+                Salary = 45500,
                 CommissionPct = 0.06m,
-                ManagerId = 3, // Указываем ID менеджера (employee3)
+                ManagerId = 1, // Указываем ID менеджера (employee3)
                 DepartmentId = department[6].DepartmentId
             };
             employees.Add(employee7);
@@ -704,7 +704,7 @@ namespace collection_practice.DbContext
                 FirstName = "Linda",
                 LastName = "Martinez",
                 Email = "linda.martinez@example.com",
-                PhoneNumber = "555-890-1234",
+                PhoneNumber = "756.890-1234",
                 HireDate = new DateTime(2018, 4, 15),
                 JobId = job[7].JobId,
                 Salary = 40000,
@@ -720,12 +720,12 @@ namespace collection_practice.DbContext
                 FirstName = "Kevin",
                 LastName = "Harris",
                 Email = "kevin.harris@example.com",
-                PhoneNumber = "555-901-2345",
+                PhoneNumber = "765-901-2345",
                 HireDate = new DateTime(2019, 11, 5),
                 JobId = job[8].JobId,
                 Salary = 52000,
                 CommissionPct = 0.08m,
-                ManagerId = 5, // Указываем ID менеджера (employee5)
+                ManagerId = 1, // Указываем ID менеджера (employee5)
                 DepartmentId = department[8].DepartmentId
             };
             employees.Add(employee9);
@@ -736,7 +736,7 @@ namespace collection_practice.DbContext
                 FirstName = "Laura",
                 LastName = "Young",
                 Email = "laura.young@example.com",
-                PhoneNumber = "555-012-3456",
+                PhoneNumber = "905.012.3456",
                 HireDate = new DateTime(2020, 7, 1),
                 JobId = job[9].JobId,
                 Salary = 48000,
