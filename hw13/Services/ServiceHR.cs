@@ -201,7 +201,12 @@ namespace hw13.Services
         {
             foreach (var item in initHr.departments)
             {
+                var location = initHr.locations.FirstOrDefault(l => l.LocationId == item.LocationId);
                 Console.WriteLine(item);
+                if (location != null)
+                {
+                    Console.WriteLine($"Location city: {location.City}, Country: {location.Country?.CountryName}\n");
+                }
             }
             Console.WriteLine();
         }
@@ -236,6 +241,36 @@ namespace hw13.Services
                 Console.WriteLine(item);
             }
             Console.WriteLine();
+        }
+
+        //Методы для дз linq2
+        public void updateLocationCountry(int locationId, Country newCountry)
+        {
+            var location = initHr.locations.FirstOrDefault(c => c.LocationId == locationId);
+            if (location != null) location.Country = newCountry;
+        }
+        public List<Country> ReadCountries()
+        {
+            return initHr.countries;
+        }
+        public List<Location> CreateLocationsForCities(List<Location> locations, List<string> cities)
+        {
+            return locations.Where(l => cities.Contains(l.City)).ToList();
+        }
+
+        public void updateDepartmentCountry(int departmentId, Country newCountry)
+        {
+            var department = initHr.departments.FirstOrDefault(d => d.DepartmentId == departmentId);
+            if (department != null)
+            {
+                var location = initHr.locations.FirstOrDefault(l => l.LocationId == department.LocationId);
+                if (location != null) location.Country = newCountry;
+            }
+        }
+
+        public List<Location> CreateLocationsForPostalCode(List<Location> locations, List<string> postalCodes)
+        {
+            return locations.Where(l => postalCodes.Contains(l.PostalCode)).ToList();
         }
     }
 }

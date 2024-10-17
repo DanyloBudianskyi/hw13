@@ -10,12 +10,12 @@
         public Country? Country { get; set; }      // Объект страны, связывающий локацию с соответствующей страной
         public override string ToString()
         {
-            return $"Location id: {LocationId}, " +
+            return $"Location id: {LocationId}\n" +
                 $"Street address: {StreetAddress}, " +
-                $"Postal Code: {PostalCode}, " +
+                $"Postal Code: {PostalCode}\n" +
                 $"City: {City}, " +
                 $"State: {StateProvince}, " +
-                $"Country: {Country}";
+                $"Country: {Country}\n";
         }
     }
 }
